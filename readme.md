@@ -35,3 +35,25 @@ docker cp /path_to_your_uncompressed_backup_folder/ mongodb:backups
 ```bash
 docker exec -it mongodb mongorestore /backups`
 ```
+
+
+### How to start the database
+
+1 - start docker daemon
+
+```bash
+sudo service docker start
+```
+
+2 - navigate to project directory
+
+```bash
+cd project-directory
+```
+
+3 - Start mongo and mongo-express containers
+
+```bash
+    docker compose up
+```
+3 - Access mongo-express on http://localhost:8081
